@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.contact {
+    color: rgb(19, 15, 15);
+}
+
+.navbar-left, .navbar-center, .navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-center {
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.navbar-right a {
+    margin-right: 20px;
+}
+
+.submenu{
+    color: black;
+    font-size: 20px;
+}
