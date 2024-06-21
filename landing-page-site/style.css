@@ -156,10 +156,14 @@ a{
   }
 
 /* tentando colocar um nome sobrepondo as imagens */
-/* .home-title{
+.home-title{
     position: absolute;
-    padding: 500px;
-} */
+    top: 650px;
+    z-index: 999;
+    font-size: 40px;
+    font-family: sans-serif;
+    color: rgb(41, 39, 39);
+}
 
 footer{
     margin-top: 5px;
