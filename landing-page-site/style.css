@@ -5,14 +5,16 @@
 }
 
 body{
-    width: 100%;
+    font-family: sans-serif;
 }
 
 .navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    max-width: 1440px;
+    padding: 1.5rem 4rem;
+    height: 80px;
 }
 
 a{
@@ -31,6 +33,7 @@ a{
 .navbar-center {
     flex-grow: 1;
     justify-content: center;
+    margin-left: 120px;
 }
 
 .navbar-right a {
@@ -41,3 +44,88 @@ a{
     color: black;
     font-size: 20px;
 }
+
+/* .img{
+    display: flex;
+    position: absolute;
+    height: 87%;
+    width: 100%;
+    z-index: 1
+} */
+
+.img{
+    width: 33%;
+    height: 545px;
+    transition: 0.5s ease-in-out;
+}
+
+.img:first-child{
+    margin-left: 3px;
+}
+
+.img:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+.section_card{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 25px;
+    gap: 7px;
+    font-family: sans-serif;
+}
+
+.card {
+    background-color: #fff;
+    width: 430px;
+    height: 430px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(128, 128, 128, 0.783);
+  }
+  .card img {
+    width: 60%;
+    height: 150px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-left: 20%;
+    margin-top: 5%;
+  }
+  .card div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 40%;
+    margin: 20px;
+  }
+  .card h1 {
+    font-size: 1.2rem;
+    margin: 5px;
+  }
+  .card h2 {
+    font-size: .9rem;
+    color: #5c5c5ceb;
+    margin: 5px;
+  }
+  .card button {
+    margin: 5px;
+    background-color: #2192FF;
+    height: 50px;
+    border: none;
+    padding: 4px;
+    width: 80%;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 15px;
+   
+  }
+  .card button:hover {
+    background-color: rgb(182, 177, 177);
+    color: rgb(248, 248, 252);
+    cursor: pointer;
+  }
+
+
