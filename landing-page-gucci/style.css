@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: sans-serif;
+    width: 100%;
+}
+
+main{
+    background-color: rgba(233, 218, 218, 0.67);
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1180px;
+    padding: 1.5rem 4rem;
+    height: 80px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.contact {
+    color: rgb(19, 15, 15);
+}
+
+.navbar-left, .navbar-center, .navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-center {
+    flex-grow: 1;
+    justify-content: center;
+    width: 80%;
+}
+
+.navbar-left{
+    width: 38%;
+}
+
+.navbar-right a {
+    margin: 20px;
+}
+
+.navbar-right{
+    width: 10%;
+}
+
+.submenu{
+    color: black;
+    font-size: 20px;
+}
+
+/* .img{
+    display: flex;
+    position: absolute;
+    height: 87%;
+    width: 100%;
+    z-index: 1
+} */
+
+.section_img{
+    display: flex;
+    justify-content: center;
+}
+
+.img{
+    width: 445px;
+    height: 550px;
+    transition: 0.5s ease-in-out;
+}
+
+.img:first-child{
+    margin-left: 1px;
+}
+
+.img:hover{
+    transform: translateX(-15px);
+    cursor: pointer;
+}
+.section_card{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    gap: 7px;
+    font-family: sans-serif;
+    
+}
+
+.section_card2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    gap: 7px;
+}
+
+.card {
+    background-color: #fff;
+    width: 430px;
+    height: 430px;
+    /* height: 80%; */
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(128, 128, 128, 0.783);
+  }
+  .card img {
+    width: 60%;
+    height: 150px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-left: 20%;
+    margin-top: 5%;
+  }
+  .card div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* height: 40%; */
+    margin: 20px;
+  }
+  .card h1 {
+    font-size: 1.2rem;
+    margin: 5px;
+  }
+  .card h2 {
+    font-size: .9rem;
+    color: #5c5c5ceb;
+    margin: 5px;
+  }
+  .card button {
+    margin: 5px;
+    background-color: #141414;
+    height: 50px;
+    border: none;
+    padding: 4px;
+    width: 80%;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 15px;
+   
+  }
+  .card button:hover {
+    background-color: rgb(182, 177, 177);
+    color: rgb(248, 248, 252);
+    cursor: pointer;
+  }
+
+/* tentando colocar um nome sobrepondo as imagens */
+.home-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 470px;
+    z-index: 999;
+    font-size: 25px;
+    color: rgb(8, 8, 8);
+    background-color: rgb(255, 255, 255);
+}
+
+.title{
+    margin: 10px;
+    font-weight: bold;
+    font-family:"Gucci Sans Pro", Helvetica, Arial, sans-serif;
+}
+
+.img-item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 0 1vw;
+    margin-top: 10px;
+
+}
+
+.img-grid-container{
+    width: 430px;
+    height: 290px;
+    box-shadow: 5px 5px 5px rgb(104, 101, 101);
+    flex-grow: 1;
+}
+
+.img-grid{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    margin-top: 8px;
+}
+
+.footer-logo{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+
+.footer-form h3, .footer-contact h3 {
+    margin-bottom: 10px;
+    margin-top: 80px;
+}
+
+
+
+.footer-form form{
+    display: flex;
+    flex-direction: column;
+    margin-right: 500px;
+}
+
+.footer-form label {
+    margin-bottom: 5px;
+}
+
+.footer-form input {
+    margin-bottom: 10px;
+    padding: 3px;
+    font-size: 15px;
+}
+
+.footer-form button {
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgb(253, 253, 251);
+    border: none;
+    cursor: pointer;
+}
+
+.footer-contact p {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
