@@ -17,46 +17,19 @@ main{
 .navbar{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    max-width: 1180px;
-    padding: 1.5rem 4rem;
+    justify-content: space-around;
+    width: 100%;
     height: 80px;
 }
 
 a{
     text-decoration: none;
+    font-size: 20px;
+    color: black;
 }
 
 .contact {
     color: rgb(19, 15, 15);
-}
-
-.navbar-left, .navbar-center, .navbar-right {
-    display: flex;
-    align-items: center;
-}
-
-.navbar-center {
-    flex-grow: 1;
-    justify-content: center;
-    width: 80%;
-}
-
-.navbar-left{
-    width: 38%;
-}
-
-.navbar-right a {
-    margin: 20px;
-}
-
-.navbar-right{
-    width: 10%;
-}
-
-.submenu{
-    color: black;
-    font-size: 20px;
 }
 
 .home-title{
@@ -208,6 +181,7 @@ footer{
     color: white;
     padding: 30px;
     margin-top: 8px;
+    width: 100%;
 }
 
 .alerta{
@@ -265,6 +239,96 @@ footer{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
+
+@media (max-width: 1000px){
+   body{
+    width: auto;
+   }
+    .footer-container{
+        display: inline-block;
+        width: 766px;
+    }
+
+    .footer-logo{
+        width: 766px;
+    }
+}
+
+@media (max-width: 500px) {
+    body{
+        overflow-x: hidden;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+    }
+
+    .img{
+        width: 100%;
+        height: 280px;
+    }
+
+    .home-title{
+        width: 120px;
+        height: 40px;
+    }
+
+    .title{
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    .section_card{
+        display: inline-block;
+        padding: 33px;
+        margin-bottom: -84px;
+        
+    }
+
+    .section_card2{
+        display: inline-block;
+        padding: 33px;
+    }
+
+    .card{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 250px;
+        margin-top: 15px;
+    }
+
+    .card div{
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3px;
+    }
+
+    .card img{
+        height: 80px;
+    }
+
+    .footer-container{
+        display: inline-block;
+        width: 430px;
+    }
+
+    .footer-form input{
+        width: 200px;
+    }
+
+    .footer-form button{
+        width: 150px;
+    }
+
+    .footer-logo{
+        width: 430px;
+    }
+}
+
 
 
 
